@@ -1,3 +1,4 @@
+//Getting all the id
 const memory8Gb = document.getElementById("8Gb-memory");
 const memory16Gb = document.getElementById("16Gb-memory");
 const ssd256Gb = document.getElementById("256Gb-ssd");
@@ -74,19 +75,21 @@ costlyDelivery.addEventListener("click", function () {
   updateTotal();
   Btnenable();
 });
+//Button disable function
 function Btndisable() {
   const buttonDs = document.getElementById("apply");
   buttonDs.disabled = true;
 }
-
+//Button enable function
 function Btnenable() {
   const buttonDs = document.getElementById("apply");
   buttonDs.disabled = false;
 }
+//apply button clicked
 document.getElementById("apply").addEventListener("click", function () {
   const promoCode = document.getElementById("promo-code");
   let promoValue = promoCode.value;
-
+//condition for usinng the promocode
   if (promoValue == "stevekaku") {
     const totalGrandValue = parseFloat(
       document.getElementById("total").innerText

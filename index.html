@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- tailwind css -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   <!-- Roboto fonts -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
 </head>
 <body>
     <!-- main tag start -->
     <main>
+        <!-- section start -->
         <section>
             <div class="grid grid-cols-2">
                 <div class="image">
@@ -58,15 +63,16 @@
                     <hr>
                     <h2 class="text-3xl font-normal mb-2 mt-4">Add promo code</h2>
                     <input id="promo-code" class="border-2 p-2 rounded mt-5" type="text">
-                    <button id="apply" class="bg-red-400 border-2 rounded font-normal px-4 py-2 ml-4 hover:bg-blue-400">Apply</button>
+                    <button id="apply" class="bg-red-400 border-2 rounded font-normal px-5 py-2 ml-4 mr-4 hover:bg-blue-400 hover:text-white">Apply</button>
                 </div>
             </div>
-            <hr class="hr2 mb-6">
+            <hr class="mb-6">
             <h2 class=" text-4xl text-center py-4">Total: $<span id="total">1299</span> </h2>
         
 
         </section>
     </main>
+    <!-- javascript source added -->
     <script src="js/macbook.js"></script>
 </body>
 </html>
